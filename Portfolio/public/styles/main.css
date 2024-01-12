@@ -1,15 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Merriweather&family=Poppins:wght@400&display=swap');;
+
 :root {
     --vertical-space: 2rem;
     --horizontal-space: 3rem;
+    --light-color: #f2f2f2;
+    --body-color: #4f5f75;
+    --heading-color: #8c4b45;
+    --contrast-color: #4d5da7;
 }
 
 body {
     font-size: 18px;
     line-height: 1.5;
+    font-family: 'Poppins';
+    background-image: linear-gradient(90deg, rgb(79,95,115),rgb(163,169,176));
+    color: var(--body-color);
 }
 
 h1, h2, h3 {
     line-height: 1.2;
+    font-family: 'Marcellus';
+    color: #F2F2F2;
+    padding-left: 5px;
 }
 
 body#avatar img { height: 15em; }
@@ -44,10 +56,20 @@ body > * {
 
 body > header {
     grid-area: head;
+    color: #4f5f75;
 }
 
 body > nav {
     grid-area: nav;
+}
+
+body > nav a {
+    color: #F2F2F2;
+    text-decoration-color: #f2f2f2;
+}
+
+body > nav a:hover {
+    color: #8c4b45;
 }
 
 body > nav ul {
@@ -57,6 +79,16 @@ body > nav ul {
 
 body > main {
     grid-area: main;
+    background-color: #CCC4C0;
+}
+
+body > main a {
+    color: #4d5d90;
+    text-decoration-color: #4f5f75;
+}
+
+body > main a:hover {
+    color: #8c4b45;
 }
 
 body > footer {
